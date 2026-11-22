@@ -7,8 +7,8 @@
   <meta name="description" content="Portfólio de João Lucas Duque Costa, estudante de Ciência da Computação. Conheça Café Mania, Fortaleza Rubra, Pulso Arena e Rastro Estelar.">
   <meta name="theme-color" content="#17142d">
   <title>João Lucas Duque Costa | Portfólio</title>
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="./hero-art.css">
+  <link rel="stylesheet" href="./styles.css?v=poster-hero">
+  <link rel="stylesheet" href="./hero-art.css?v=poster-hero">
   <script src="./portfolio.js" defer></script>
 </head>
 <body id="topo">
@@ -26,23 +26,24 @@
     </nav>
   </header>
 
-  <main class="shell">
+  <main>
     <section class="hero" aria-labelledby="titulo">
-      <div class="hero-copy">
-        <p class="hero-name">João Lucas Duque Costa</p>
-        <h1 id="titulo"><span>Port</span><span>fólio</span></h1>
-        <p class="hero-description">Desenvolvimento de software, jogos e experiências interativas.</p>
-        <a class="button button-primary" href="#projetos">Explorar projetos</a>
+      <div class="hero-inner shell">
+        <div class="hero-copy">
+          <p class="hero-name">João Lucas Duque Costa</p>
+          <h1 id="titulo"><span>Port</span><span>fólio</span></h1>
+          <p class="hero-description">Desenvolvimento de software, jogos e experiências interativas.</p>
+          <a class="button button-primary" href="#projetos">Explorar projetos</a>
+        </div>
       </div>
       <div class="hero-art" aria-hidden="true">
-        <span class="art-arc"></span>
-        <span class="art-flower"></span>
-        <span class="art-waves"></span>
-        <span class="art-grid"></span>
+        <span class="art-route"></span>
+        <span class="art-field"></span>
+        <span class="art-accent"></span>
       </div>
     </section>
 
-    <section id="projetos" class="projects" aria-labelledby="titulo-projetos">
+    <section id="projetos" class="projects shell" aria-labelledby="titulo-projetos">
       <div class="section-heading">
         <h2 id="titulo-projetos">Projetos</h2>
       </div>
@@ -114,7 +115,7 @@
       </div>
     </section>
 
-    <section id="sobre" class="about" aria-labelledby="titulo-sobre">
+    <section id="sobre" class="about shell" aria-labelledby="titulo-sobre">
       <div class="about-intro">
         <h2 id="titulo-sobre">Sobre mim</h2>
         <p>Sou João Lucas Duque Costa, estudante de Ciência da Computação no IBMR, com formação complementar em Desenvolvimento Full Stack Júnior. Gosto de aplicar o que aprendo em projetos de software e jogos. Minha experiência também inclui atendimento ao público, recepção e organização de tarefas.</p>
@@ -131,7 +132,7 @@
       </div>
     </section>
 
-    <section id="habilidades" class="skills" aria-labelledby="titulo-habilidades">
+    <section id="habilidades" class="skills shell" aria-labelledby="titulo-habilidades">
       <div class="section-heading">
         <h2 id="titulo-habilidades">Habilidades</h2>
       </div>
@@ -144,7 +145,7 @@
             <li>Python (iniciante)</li>
           </ul>
         </div>
-        <div class="skill-group ai">
+        <div class="skill-group ai-skill">
           <h3>IA no desenvolvimento</h3>
           <ul>
             <li>IA generativa para prototipagem</li>

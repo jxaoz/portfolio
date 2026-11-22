@@ -1,115 +1,72 @@
 .hero-art {
-  --art-night: #17142d;
-  --art-violet: #5146f5;
-  --art-lilac: #c5b8fc;
-  --art-lime: #e5ff88;
-  --art-pink: #ff79b3;
-  --art-sky: #61dbee;
-  display: grid;
-  grid-template-columns: 1.16fr 1fr;
-  grid-template-rows: 1fr .92fr;
-  gap: clamp(.3rem, .85vw, .65rem);
-  align-self: center;
-  width: 100%;
-  min-width: 0;
-  aspect-ratio: 1.32;
-  isolation: isolate;
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent 27%, #173d32 77%);
+  mask-image: linear-gradient(90deg, transparent 25%, #0004 42%, #000 67%);
 }
 
 .hero-art > span {
-  position: relative;
-  overflow: hidden;
-  min-width: 0;
-  min-height: 0;
-}
-
-.art-arc {
-  background: radial-gradient(circle at 0 100%,
-    var(--art-lime) 0 15%, transparent 15.3% 25%,
-    var(--art-lime) 25.3% 32%, transparent 32.3% 42%,
-    var(--art-lime) 42.3% 49%, transparent 49.3% 59%,
-    var(--art-lime) 59.3% 66%, transparent 66.3% 76%,
-    var(--art-lime) 76.3% 83%, transparent 83.3%), var(--art-violet);
-}
-
-.art-flower {
-  display: grid;
-  place-items: center;
-  background: var(--art-lilac);
-}
-
-.art-flower::before {
-  --petal: radial-gradient(circle closest-side, var(--art-pink) 97%, transparent);
-  content: '';
-  width: 69%;
-  max-width: 78%;
-  aspect-ratio: 1;
-  transform: rotate(-12deg);
-  background:
-    var(--petal) 50% 0 / 43% 43% no-repeat,
-    var(--petal) 85% 15% / 43% 43% no-repeat,
-    var(--petal) 100% 50% / 43% 43% no-repeat,
-    var(--petal) 85% 85% / 43% 43% no-repeat,
-    var(--petal) 50% 100% / 43% 43% no-repeat,
-    var(--petal) 15% 85% / 43% 43% no-repeat,
-    var(--petal) 0 50% / 43% 43% no-repeat,
-    var(--petal) 15% 15% / 43% 43% no-repeat,
-    radial-gradient(circle closest-side, var(--art-pink) 78%, transparent 79%);
-}
-
-.art-flower::after {
-  content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 19%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: var(--art-violet);
-  transform: translate(-50%, -50%);
+  inset: 0 0 0 38%;
 }
 
-.art-waves {
-  background: var(--art-sky);
+.hero-art .art-field {
+  background: #37825a;
+  clip-path: polygon(100% 18%, 79% 18%, 79% 60%, 45% 60%, 45% 100%, 100% 100%);
+  clip-path: shape(
+    from 100% 18%, hline to 96%,
+    curve to 79% 43% with 79% 18%, vline to 47%,
+    curve to 66% 60% with 79% 60%, hline to 60%,
+    curve to 45% 79% with 45% 60%, vline to 100%,
+    hline to 100%, close
+  );
 }
 
-.art-waves::before,
-.art-waves::after {
-  content: '';
-  position: absolute;
-  width: 118%;
-  height: 167%;
-  transform: rotate(-20deg);
+.hero-art .art-route {
+  z-index: 1;
+  background: var(--acid, #e5ff88);
+  mask-image: linear-gradient(90deg, transparent, #000 27%);
+  clip-path: polygon(100% 7%, 65% 7%, 65% 41%, 33% 41%, 33% 77%, 0 77%, 0 100%, 53% 100%, 53% 67%, 86% 67%, 86% 31%, 100% 31%);
+  clip-path: shape(
+    from 100% 7%, hline to 80%,
+    curve to 65% 26% with 65% 7%, vline to 28%,
+    curve to 54% 41% with 65% 41%, hline to 48%,
+    curve to 33% 59% with 33% 41%, vline to 64%,
+    curve to 22% 77% with 33% 77%, hline to 0,
+    vline to 100%, hline to 39%,
+    curve to 53% 84% with 53% 100%, vline to 79%,
+    curve to 65% 67% with 53% 67%, hline to 71%,
+    curve to 86% 50% with 86% 67%, vline to 43%,
+    curve to 98% 31% with 86% 31%, hline to 100%, close
+  );
 }
 
-.art-waves::before {
-  bottom: -71%;
-  left: -53%;
-  background: repeating-radial-gradient(ellipse closest-side,
-    var(--art-night) 0 5%, transparent 5.75% 12%,
-    var(--art-night) 12.75% 18%);
+.hero-art .art-accent {
+  background: #bdaeef;
+  clip-path: polygon(100% 67%, 85% 67%, 85% 100%, 100% 100%);
+  clip-path: shape(
+    from 100% 67%, hline to 98%,
+    curve to 85% 84% with 85% 67%, vline to 91%,
+    curve to 78% 100% with 85% 100%, hline to 100%, close
+  );
 }
 
-.art-waves::after {
-  top: -72%;
-  right: -58%;
-  background: repeating-radial-gradient(ellipse closest-side,
-    var(--art-violet) 0 5%, transparent 5.75% 12%,
-    var(--art-violet) 12.75% 18%);
+@media (max-width: 850px) {
+  .hero-art {
+    background: linear-gradient(125deg, transparent 34%, #173d32 88%);
+    mask-image: linear-gradient(125deg, transparent 34%, #0003 51%, #000 85%);
+  }
+
+  .hero-art > span {
+    inset: 31% -9% 0 19%;
+  }
 }
 
-.art-grid {
-  background: conic-gradient(var(--art-violet) 25%, #2b254b 0 50%, var(--art-violet) 0 75%, #2b254b 0)
-    left top / 28.57% 40%;
-}
-
-.art-grid::before {
-  content: '';
-  position: absolute;
-  right: -9%;
-  bottom: -35%;
-  width: 83%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: var(--art-pink);
+@media (max-width: 520px) {
+  .hero-art > span {
+    inset: 44% -8% 0 11%;
+  }
 }
