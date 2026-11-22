@@ -20,7 +20,7 @@
     from 100% 18%, hline to 96%,
     curve to 79% 43% with 79% 18%, vline to 47%,
     curve to 66% 60% with 79% 60%, hline to 60%,
-    curve to 45% 79% with 45% 60%, vline to 100%,
+    curve to 45% 79% with 45% 60%, line to 38% 100%,
     hline to 100%, close
   );
 }
