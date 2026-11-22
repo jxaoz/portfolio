@@ -153,6 +153,12 @@ section[id] { scroll-margin-top: 1.5rem; }
 .languages { --skill-paper: #ffe65b; }
 .skill-group ul { margin: .85rem 0 0; padding-left: 1.2rem; }
 .skill-group li + li { margin-top: .16rem; }
+.skill-group .language-list { padding: 0; list-style: none; }
+.language-list li { display: flex; align-items: center; justify-content: space-between; gap: .65rem; }
+.language-list li + li { margin-top: .5rem; }
+.language-rating { display: flex; flex: none; gap: .28rem; }
+.language-dot { width: .62rem; height: .62rem; border-radius: 50%; background-color: currentColor; opacity: .24; }
+.language-dot.is-filled { opacity: 1; }
 .site-footer { min-height: 5rem; border-top: 1px solid var(--line); }
 
 .project-dialog { width: min(46rem, calc(100% - 2rem)); max-height: calc(100% - 2rem); padding: 0; color: var(--text); background: var(--panel); border: 2px solid var(--project-color); overscroll-behavior: contain; }
