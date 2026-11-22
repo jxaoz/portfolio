@@ -158,7 +158,16 @@ section[id] { scroll-margin-top: 1.5rem; }
 .project-dialog { width: min(46rem, calc(100% - 2rem)); max-height: calc(100% - 2rem); padding: 0; color: var(--text); background: var(--panel); border: 2px solid var(--project-color); overscroll-behavior: contain; }
 .project-dialog::backdrop { background: #0c0a1cda; backdrop-filter: blur(7px); }
 .dialog-inner { position: relative; }
-.dialog-controls { position: absolute; z-index: 1; inset: .75rem .75rem auto auto; margin: 0; }
+.dialog-controls {
+  position: sticky;
+  z-index: 1;
+  top: .75rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 0;
+  margin: 0 .75rem 0 0;
+}
 .close-button { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; padding: 0; cursor: pointer; border: 1px solid #ffffff66; border-radius: 50%; background: #17142df2; color: #fff; font-size: 1.65rem; line-height: 1; }
 .close-button:hover { background: #3d3256; }
 .dialog-cover { width: 100%; height: auto; max-height: 43vh; object-fit: cover; background: var(--cover-bg); }
@@ -167,6 +176,9 @@ section[id] { scroll-margin-top: 1.5rem; }
 .dialog-content h2 { font-size: clamp(2.5rem, 7vw, 4.5rem); }
 .dialog-content .project-type, .dialog-content code { color: var(--project-color); }
 .dialog-content p:not(.project-type) { margin: .8rem 0 0; color: var(--muted); }
+.dialog-subheading { margin-top: 1.2rem; font: 800 1.65rem/1 var(--display); text-transform: uppercase; }
+.dialog-content .dialog-subheading + p { margin-top: .4rem; }
+.addon-commands { margin: .6rem 0 0; padding-left: 1.2rem; color: var(--muted); }
 .dialog-content .image-note, .dialog-content .access-note { font-size: .875rem; }
 .dialog-actions { margin-top: 1.15rem; }
 .dialog-actions .button-primary { border-color: var(--project-color); background: var(--project-color); color: var(--project-ink); }
