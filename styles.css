@@ -86,7 +86,7 @@ section[id] { scroll-margin-top: 1.5rem; }
 .project-card { display: grid; min-width: 0; }
 .cafe { --project-color: #ffe65b; --project-ink: #291d26; --project-mark: #fa6a3f; --cover-bg: #723319; }
 .fortaleza { --project-color: #ff91b8; --project-ink: #391829; --project-mark: #ac314d; --cover-bg: #32192a; }
-.pulso { --project-color: #dfff87; --project-ink: #1c3328; --project-mark: #398663; --cover-bg: #111520; }
+.prismaframe { --project-color: #83e6f7; --project-ink: #101c36; --project-mark: #3c5bd9; --cover-bg: #0f131c; }
 .rastro { --project-color: #c5b8fc; --project-ink: #251c4d; --project-mark: #5941bd; --cover-bg: #171430; }
 .project-link {
   display: flex;
@@ -109,13 +109,13 @@ section[id] { scroll-margin-top: 1.5rem; }
   opacity: .26;
 }
 .fortaleza .project-heading::after { border-radius: 2rem; transform: rotate(32deg); }
-.pulso .project-heading::after { border-radius: 7rem 1.1rem 7rem 1.1rem; transform: rotate(14deg); }
+.prismaframe .project-heading::after { border-radius: 7rem 1.1rem 7rem 1.1rem; transform: rotate(14deg); }
 .rastro .project-heading::after { border-radius: 1rem 7rem 1rem 7rem; transform: rotate(-42deg); }
 .project-heading h3 { font: 800 clamp(2.2rem, 5.2vw, 4.3rem)/.92 var(--display); letter-spacing: -.02em; text-transform: uppercase; }
 .project-type { margin: 0 0 .4rem; font-size: .875rem; font-weight: 700; }
 .project-cover { overflow: hidden; margin-inline: clamp(.5rem, 1.2vw, .85rem); aspect-ratio: 1.83; background: var(--cover-bg); }
 .project-cover img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s; }
-.pulso .project-cover img { object-fit: contain; }
+.prismaframe .project-cover img { object-fit: contain; }
 .project-info { display: flex; flex: 1; flex-direction: column; align-items: flex-start; padding: .9rem clamp(.8rem, 2.3vw, 1.5rem) 1.2rem; }
 .project-description { margin: 0 0 .75rem; }
 .project-action { display: inline-flex; align-items: baseline; gap: .45rem; margin-top: auto; font-size: .94rem; font-weight: 700; }
@@ -194,7 +194,7 @@ section[id] { scroll-margin-top: 1.5rem; }
 .close-button { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; padding: 0; cursor: pointer; border: 1px solid #ffffff66; border-radius: 50%; background: #17142df2; color: #fff; font-size: 1.65rem; line-height: 1; }
 .close-button:hover { background: #3d3256; }
 .dialog-cover { width: 100%; height: auto; max-height: 43vh; object-fit: cover; background: var(--cover-bg); }
-.pulso .dialog-cover { object-fit: contain; }
+.prismaframe .dialog-cover { object-fit: contain; }
 .dialog-content { padding: clamp(1.2rem, 4vw, 2rem); }
 .dialog-content h2 { font-size: clamp(2.5rem, 7vw, 4.5rem); }
 .dialog-content .project-type, .dialog-content code { color: var(--project-color); }

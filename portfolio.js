@@ -12,7 +12,8 @@ function openProject(dialog) {
 }
 
 function showProjectFromHash() {
-  const project = projects.get(window.location.hash.slice(1));
+  const projectId = window.location.hash.slice(1);
+  const project = projects.get(projectId === "pulso-arena" ? "prismaframe" : projectId);
   if (project) {
     openProject(project);
   } else {

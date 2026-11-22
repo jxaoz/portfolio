@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <meta name="description" content="Portfólio de João Lucas Duque Costa, estudante de Ciência da Computação. Conheça Café Mania, Fortaleza Rubra, Pulso Arena e Rastro Estelar.">
+  <meta name="description" content="Portfólio de João Lucas Duque Costa, estudante de Ciência da Computação. Conheça Café Mania, Fortaleza Rubra, PrismaFrame e Rastro Estelar.">
   <meta name="theme-color" content="#17142d">
   <title>João Lucas Duque Costa | Portfólio</title>
-  <link rel="stylesheet" href="./styles.css?v=acoes-projetos">
+  <link rel="stylesheet" href="./styles.css?v=prismaframe">
   <link rel="stylesheet" href="./hero-art.css?v=encaixe">
-  <script src="./portfolio.js" defer></script>
+  <script src="./portfolio.js?v=prismaframe" defer></script>
 </head>
 <body id="topo">
   <a class="skip-link" href="#projetos">Ir para os projetos</a>
@@ -86,17 +86,17 @@
           </a>
         </article>
 
-        <article class="project-card pulso">
-          <a class="project-link" href="#pulso-arena" data-project="pulso-arena" aria-label="Ver projeto Pulso Arena">
+        <article class="project-card prismaframe">
+          <a class="project-link" href="#prismaframe" data-project="prismaframe" aria-label="Ver projeto PrismaFrame">
             <div class="project-heading">
               <p class="project-type">Aplicativo Windows</p>
-              <h3>Pulso Arena</h3>
+              <h3>PrismaFrame</h3>
             </div>
             <div class="project-cover">
-              <img src="./assets/pulso-arena.webp" width="1200" height="770" alt="" loading="lazy">
+              <img src="./assets/prismaframe.webp" width="1200" height="770" alt="" loading="lazy">
             </div>
             <div class="project-info">
-              <p class="project-description">Analise seu PC e encontre ajustes reversíveis para jogar no Windows.</p>
+              <p class="project-description">Otimizador de jogos para Windows com scanner de hardware e ajustes automáticos reversíveis.</p>
               <span class="project-action">
                 <span class="project-action-label">Ver projeto</span>
                 <span aria-hidden="true">+</span>
@@ -248,16 +248,17 @@
     </div>
   </dialog>
 
-  <dialog id="pulso-arena" class="project-dialog pulso" aria-labelledby="pulso-titulo">
+  <dialog id="prismaframe" class="project-dialog prismaframe" aria-labelledby="prismaframe-titulo">
     <div class="dialog-inner">
-      <form method="dialog" class="dialog-controls"><button class="close-button" aria-label="Fechar Pulso Arena" autofocus>×</button></form>
-      <img class="dialog-cover" src="./assets/pulso-arena.webp" width="1200" height="770" alt="Interface do Pulso Arena" loading="lazy">
+      <form method="dialog" class="dialog-controls"><button class="close-button" aria-label="Fechar PrismaFrame" autofocus>×</button></form>
+      <img class="dialog-cover" src="./assets/prismaframe.webp" width="1200" height="770" alt="Painel do PrismaFrame com a configuração do PC e as ferramentas de ajustes, limpeza e recuperação" loading="lazy">
       <div class="dialog-content">
-        <p class="project-type">Aplicativo Windows</p>
-        <h2 id="pulso-titulo">Pulso Arena</h2>
-        <p>O aplicativo identifica o hardware do PC e sugere ajustes para desempenho, estabilidade e latência em jogos. Foi desenvolvido com WPF e PowerShell para Windows 10 e 11.</p>
+        <p class="project-type">Aplicativo Windows · v1.1.1</p>
+        <h2 id="prismaframe-titulo">PrismaFrame</h2>
+        <p>O PrismaFrame analisa o hardware do PC localmente e recomenda ajustes para FPS, estabilidade e latência em jogos. A interface escura com destaques em neon dá acesso a 140 opções, incluindo 82 ajustes automáticos que podem ser desfeitos pelo histórico.</p>
+        <p>O aplicativo também oferece limpeza com prévia e foi desenvolvido com WPF e PowerShell para Windows 10 e 11 de 64 bits.</p>
         <div class="dialog-actions">
-          <a class="button button-primary" href="https://github.com/jxaoz/pulso-arena/releases/tag/v1.0.0">Ver versão para Windows</a>
+          <a class="button button-primary" href="https://github.com/jxaoz/pulso-arena/releases/tag/v1.1.1">Ver release para Windows</a>
         </div>
       </div>
     </div>
