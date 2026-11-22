@@ -159,6 +159,24 @@ section[id] { scroll-margin-top: 1.5rem; }
 .language-rating { display: flex; flex: none; gap: .28rem; }
 .language-dot { width: .62rem; height: .62rem; border-radius: 50%; background-color: currentColor; opacity: .24; }
 .language-dot.is-filled { opacity: 1; }
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.15rem 2rem;
+  padding: clamp(1rem, 3vw, 2rem);
+  margin-bottom: clamp(2.5rem, 5vw, 4.5rem);
+  background: var(--acid);
+  color: var(--background);
+}
+.contact h2 { font: 800 clamp(2.5rem, 5vw, 4rem)/.92 var(--display); text-transform: uppercase; }
+.contact-links { display: flex; flex-wrap: wrap; gap: .9rem 2rem; margin: 0; font-style: normal; min-width: 0; }
+.contact-links a { display: grid; gap: .15rem; min-width: 0; overflow-wrap: anywhere; }
+.contact-links span { font-size: .875rem; }
+.contact-links strong { text-decoration: underline; text-underline-offset: .2em; }
+.contact-links a:hover strong { text-decoration-thickness: 2px; }
+.contact-links a:focus-visible { outline-color: var(--background); }
 .site-footer { min-height: 5rem; border-top: 1px solid var(--line); }
 
 .project-dialog { width: min(46rem, calc(100% - 2rem)); max-height: calc(100% - 2rem); padding: 0; color: var(--text); background: var(--panel); border: 2px solid var(--project-color); overscroll-behavior: contain; }
