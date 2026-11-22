@@ -136,9 +136,11 @@ section[id] { scroll-margin-top: 1.5rem; }
 .education dt { font-weight: 700; }
 .education dd { margin: .1rem 0 1rem; }
 .education dd:last-child { margin-bottom: 0; }
-.skills-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(.8rem, 2.5vw, 1.5rem); }
+.skills-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(.8rem, 2vw, 1.5rem); }
 .skill-group { padding: clamp(1rem, 2.6vw, 1.55rem); color: #201c40; }
+.skill-group h3 { font-size: clamp(1.6rem, 2.9vw, 2.3rem); }
 .programming { background: #61dbee; }
+.ai { background: #dfff87; }
 .tools { background: #ff9cc5; }
 .languages { background: #ffe65b; }
 .skill-group ul { margin: .85rem 0 0; padding-left: 1.2rem; }
@@ -162,6 +164,9 @@ section[id] { scroll-margin-top: 1.5rem; }
 .dialog-actions .button-primary { border-color: var(--project-color); background: var(--project-color); color: var(--project-ink); }
 .dialog-actions .button-primary:hover { border-color: var(--text); background: var(--text); }
 
+@media (max-width: 1050px) {
+  .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 @media (max-width: 850px) {
   .hero { grid-template-columns: 1fr; gap: 1.75rem; }
   .hero h1 { font-size: clamp(4.15rem, 16.4vw, 8.3rem); }
