@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <meta name="description" content="Portfólio de João Lucas Duque Costa, estudante de Ciência da Computação. Conheça Café Mania, Fortaleza Rubra, PrismaFrame e Rastro Estelar.">
+  <meta name="description" content="Portfólio de João Lucas Duque Costa, estudante de Ciência da Computação. Conheça Café Mania, Fortaleza Rubra, PrismaFrame, Rastro Estelar e Drivers License.">
   <meta name="theme-color" content="#17142d">
   <title>João Lucas Duque Costa | Portfólio</title>
-  <link rel="stylesheet" href="./styles.css?v=prismaframe">
+  <link rel="stylesheet" href="./styles.css?v=drivers-license">
   <link rel="stylesheet" href="./hero-art.css?v=encaixe">
   <script src="./portfolio.js?v=prismaframe" defer></script>
 </head>
@@ -116,6 +116,25 @@
             </div>
             <div class="project-info">
               <p class="project-description">Meu primeiro projeto dá ao cursor um rastro animado de estrelas ou corações no WoW.</p>
+              <span class="project-action">
+                <span class="project-action-label">Ver projeto</span>
+                <span aria-hidden="true">+</span>
+              </span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card drivers-license">
+          <a class="project-link" href="#drivers-license" data-project="drivers-license" aria-label="Ver projeto Drivers License">
+            <div class="project-heading">
+              <p class="project-type">Aplicativo Windows</p>
+              <h3>Drivers License</h3>
+            </div>
+            <div class="project-cover">
+              <img src="./assets/drivers-license.webp" width="1136" height="804" alt="" loading="lazy">
+            </div>
+            <div class="project-info">
+              <p class="project-description">Veja os drivers instalados e encontre atualizações compatíveis no Windows Update e no catálogo da NVIDIA.</p>
               <span class="project-action">
                 <span class="project-action-label">Ver projeto</span>
                 <span aria-hidden="true">+</span>
@@ -283,6 +302,22 @@
         <div class="dialog-actions">
           <a class="button button-primary" href="https://github.com/jxaoz/rastro-estelar/releases/tag/v0.2.0">Ver release v0.2.0</a>
           <p class="access-note">A release exige acesso ao repositório no GitHub.</p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="drivers-license" class="project-dialog drivers-license" aria-labelledby="drivers-license-titulo">
+    <div class="dialog-inner">
+      <form method="dialog" class="dialog-controls"><button class="close-button" aria-label="Fechar Drivers License" autofocus>×</button></form>
+      <img class="dialog-cover" src="./assets/drivers-license.webp" width="1136" height="804" alt="Tela do Drivers License com o velocímetro de busca e exemplos de ofertas do Windows Update e da NVIDIA" loading="lazy">
+      <div class="dialog-content">
+        <p class="project-type">Aplicativo Windows · v1.3.0</p>
+        <h2 id="drivers-license-titulo">Drivers License</h2>
+        <p>O Drivers License reúne em uma lista as atualizações de drivers oferecidas pelo Windows Update e pelo catálogo oficial da NVIDIA para placas GeForce compatíveis. Cada oferta mostra a origem, e você escolhe quais pacotes instalar.</p>
+        <p>O aplicativo também mostra os drivers instalados e permite filtrar a busca por vídeo. Foi desenvolvido em C# para Windows 10 e 11 e tem instalador e versão portátil.</p>
+        <div class="dialog-actions">
+          <a class="button button-primary" href="https://github.com/jxaoz/atualizador-de-drivers/releases/tag/v1.3.0">Ver release para Windows</a>
         </div>
       </div>
     </div>
