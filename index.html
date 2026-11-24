@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <meta name="description" content="Portfólio de João Lucas Duque Costa, estudante de Ciência da Computação. Conheça Café Mania, Fortaleza Rubra, PrismaFrame, Rastro Estelar e Drivers License.">
+  <meta name="description" content="Portfólio de João Lucas Duque Costa, estudante de Ciência da Computação. Conheça Café Mania, Fortaleza Rubra, PrismaFrame, Rastro Estelar, Drivers License e Atlas Astral.">
   <meta name="theme-color" content="#17142d">
   <title>João Lucas Duque Costa | Portfólio</title>
-  <link rel="stylesheet" href="./styles.css?v=drivers-license">
+  <link rel="stylesheet" href="./styles.css?v=atlas-astral">
   <link rel="stylesheet" href="./hero-art.css?v=encaixe">
   <script src="./portfolio.js?v=prismaframe" defer></script>
 </head>
@@ -135,6 +135,25 @@
             </div>
             <div class="project-info">
               <p class="project-description">Veja os drivers instalados e encontre atualizações compatíveis no Windows Update e no catálogo da NVIDIA.</p>
+              <span class="project-action">
+                <span class="project-action-label">Ver projeto</span>
+                <span aria-hidden="true">+</span>
+              </span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card atlas-astral">
+          <a class="project-link" href="#atlas-astral" data-project="atlas-astral" aria-label="Ver projeto Atlas Astral">
+            <div class="project-heading">
+              <p class="project-type">Aplicativo web</p>
+              <h3>Atlas Astral</h3>
+            </div>
+            <div class="project-cover">
+              <img src="./assets/atlas-astral.webp" width="1280" height="800" alt="" loading="lazy">
+            </div>
+            <div class="project-info">
+              <p class="project-description">Calcule seu mapa astral a partir da data, hora e cidade de nascimento e explore os planetas, as 12 casas e os aspectos.</p>
               <span class="project-action">
                 <span class="project-action-label">Ver projeto</span>
                 <span aria-hidden="true">+</span>
@@ -318,6 +337,22 @@
         <p>O aplicativo também mostra os drivers instalados e permite filtrar a busca por vídeo. Foi desenvolvido em C# para Windows 10 e 11 e tem instalador e versão portátil.</p>
         <div class="dialog-actions">
           <a class="button button-primary" href="https://github.com/jxaoz/atualizador-de-drivers/releases/tag/v1.3.0">Ver release para Windows</a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="atlas-astral" class="project-dialog atlas-astral" aria-labelledby="atlas-astral-titulo">
+    <div class="dialog-inner">
+      <form method="dialog" class="dialog-controls"><button class="close-button" aria-label="Fechar Atlas Astral" autofocus>×</button></form>
+      <img class="dialog-cover" src="./assets/atlas-astral.webp" width="1280" height="800" alt="Atlas Astral com o formulário de nascimento e a carta natal de exemplo em uma roda zodiacal" loading="lazy">
+      <div class="dialog-content">
+        <p class="project-type">Aplicativo web</p>
+        <h2 id="atlas-astral-titulo">Atlas Astral</h2>
+        <p>Informe a data, a hora local e a cidade de nascimento para gerar uma carta natal no navegador. O Atlas Astral usa a cidade para ajustar o fuso e apresenta as posições dos planetas, as 12 casas e os aspectos em uma roda zodiacal.</p>
+        <p>As abas detalham o mapa e permitem abrir leituras sobre o que cada signo pode representar na casa em que aparece.</p>
+        <div class="dialog-actions">
+          <a class="button button-primary" href="https://jxaoz.github.io/atlas-astral/">Calcular mapa astral</a>
         </div>
       </div>
     </div>
